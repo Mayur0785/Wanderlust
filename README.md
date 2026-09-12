@@ -149,8 +149,9 @@ Wanderlust/
 
 ## Environment Variables
 
-To run the project locally, create a .env file in the project root and add your own credentials.
+To run the project locally, create a `.env` file in the project root and add your own credentials.
 
+```env
 ATLASDB_URL=your_mongodb_connection_string
 SECRET=your_session_secret
 
@@ -161,26 +162,45 @@ CLOUD_API_SECRET=your_cloudinary_api_secret
 MAP_TOKEN=your_mapbox_token
 
 NODE_ENV=development
+```
 
-Do not upload the .env file to GitHub.
+Do not upload the `.env` file to GitHub.
 
 ## Run Locally
-1. Clone the repository
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/Mayur0785/Wanderlust.git
-2. Go to the project directory
+```
+
+### 2. Go to the project directory
+
+```bash
 cd Wanderlust
-3. Install dependencies
+```
+
+### 3. Install dependencies
+
+```bash
 npm install
-4. Create the .env file
+```
+
+### 4. Create the `.env` file
 
 Add your MongoDB, Cloudinary and Mapbox credentials.
 
-5. Start the application
+### 5. Start the application
+
+```bash
 npm start
+```
 
 The application will run locally on:
 
+```text
 http://localhost:8080
+```
 
 ## Database
 
@@ -188,9 +208,9 @@ MongoDB Atlas is used as the database.
 
 The main collections are:
 
-Users
-Listings
-Reviews
+- Users
+- Listings
+- Reviews
 
 Listings and reviews use MongoDB ObjectId references to maintain relationships between documents.
 
@@ -204,13 +224,12 @@ The application stores the Cloudinary image URL and image filename with the list
 
 Mapbox is used for:
 
-Location search
-Forward geocoding
-Displaying interactive maps
-Showing listing locations using map markers
+- Location search
+- Forward geocoding
+- Displaying interactive maps
+- Showing listing locations using map markers
 
 Listing locations are stored using GeoJSON Point coordinates.
-
 
 ## Authentication and Authorization
 
@@ -218,17 +237,17 @@ Passport.js is used for user authentication.
 
 Authorization middleware ensures that:
 
-Only logged-in users can create listings.
-Only listing owners can edit or delete their listings.
-Only authorized users can delete their reviews.
+- Only logged-in users can create listings.
+- Only listing owners can edit or delete their listings.
+- Only authorized users can delete their reviews.
 
 ## Deployment
-
 
 The application is deployed using Render.
 
 Deployment flow:
 
+```text
 GitHub
    ↓
 Render
@@ -240,44 +259,52 @@ MongoDB Atlas
 Cloudinary
    ↓
 Mapbox
+```
 
+## Screenshots
+
+Screenshots of the application will be added here.
 
 ## Future Improvements
 
 Some features planned for future versions:
 
-Booking and reservation system
-Payment integration
-User dashboard
-Host dashboard
-Wishlist
-Pagination
-Advanced search filters
-Availability management
-Email notifications
+- Booking and reservation system
+- Payment integration
+- User dashboard
+- Host dashboard
+- Wishlist
+- Pagination
+- Advanced search filters
+- Availability management
+- Email notifications
+
 ## What I Learned
 
 While building this project, I worked with:
 
-Full-stack web development
-Node.js and Express.js
-MVC architecture
-MongoDB and Mongoose
-Authentication and authorization
-RESTful routes
-Session management
-Cloudinary integration
-Mapbox API integration
-Geocoding
-EJS server-side rendering
-Input validation
-Error handling
-Git and GitHub
-Deployment using Render
+- Full-stack web development
+- Node.js and Express.js
+- MVC architecture
+- MongoDB and Mongoose
+- Authentication and authorization
+- RESTful routes
+- Session management
+- Cloudinary integration
+- Mapbox API integration
+- Geocoding
+- EJS server-side rendering
+- Input validation
+- Error handling
+- Git and GitHub
+- Deployment using Render
+
 ## Author
 
-Mayur Kapse
+**Mayur Kapse**
 
 GitHub: https://github.com/Mayur0785
 
+## License
 
+This project was built for learning and portfolio purposes.
