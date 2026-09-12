@@ -145,7 +145,9 @@ Wanderlust/
 ├── package-lock.json
 ├── .gitignore
 └── README.md
-Environment Variables
+```
+
+## Environment Variables
 
 To run the project locally, create a .env file in the project root and add your own credentials.
 
@@ -162,7 +164,7 @@ NODE_ENV=development
 
 Do not upload the .env file to GitHub.
 
-Run Locally
+## Run Locally
 1. Clone the repository
 git clone https://github.com/Mayur0785/Wanderlust.git
 2. Go to the project directory
@@ -179,7 +181,8 @@ npm start
 The application will run locally on:
 
 http://localhost:8080
-Database
+
+## Database
 
 MongoDB Atlas is used as the database.
 
@@ -191,13 +194,13 @@ Reviews
 
 Listings and reviews use MongoDB ObjectId references to maintain relationships between documents.
 
-Image Upload
+## Image Upload
 
 Listing images are uploaded using Cloudinary.
 
 The application stores the Cloudinary image URL and image filename with the listing data in MongoDB.
 
-Maps and Location
+## Maps and Location
 
 Mapbox is used for:
 
@@ -208,7 +211,8 @@ Showing listing locations using map markers
 
 Listing locations are stored using GeoJSON Point coordinates.
 
-Authentication and Authorization
+
+## Authentication and Authorization
 
 Passport.js is used for user authentication.
 
@@ -217,7 +221,9 @@ Authorization middleware ensures that:
 Only logged-in users can create listings.
 Only listing owners can edit or delete their listings.
 Only authorized users can delete their reviews.
-Deployment
+
+## Deployment
+
 
 The application is deployed using Render.
 
@@ -234,11 +240,9 @@ MongoDB Atlas
 Cloudinary
    ↓
 Mapbox
-Screenshots
 
-Screenshots of the application will be added here.
 
-Future Improvements
+## Future Improvements
 
 Some features planned for future versions:
 
@@ -251,7 +255,7 @@ Pagination
 Advanced search filters
 Availability management
 Email notifications
-What I Learned
+## What I Learned
 
 While building this project, I worked with:
 
@@ -270,7 +274,7 @@ Input validation
 Error handling
 Git and GitHub
 Deployment using Render
-Author
+## Author
 
 Mayur Kapse
 
